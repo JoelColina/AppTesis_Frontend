@@ -9,6 +9,7 @@ import { ClientComponent } from './pages/client/client.component';
 import { ReportsAcountComponent } from './pages/components/reports-acount/reports-acount.component';
 import { PurchasingReportComponent } from './pages/components/purchasing-report/purchasing-report.component';
 import { CustomerReportComponent } from './pages/components/customer-report/customer-report.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CustomerReportComponent } from './pages/components/customer-report/cust
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
