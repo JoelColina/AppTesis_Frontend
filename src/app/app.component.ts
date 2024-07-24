@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Mode } from './core/enums/mode.enum';
+import { LoginComponent } from './pages/login/login.component';
 
 @Component({
   selector: 'app-root',
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
+
 })
 export class AppComponent {
   title = 'retail';
@@ -15,7 +18,12 @@ export class AppComponent {
 
 
   checkedaction():void{
-     this.mode.dark
+    if (this.modetheme = this.mode.light){
+       this.modetheme =  this.mode.dark.toString()
+    } else {
+      this.modetheme =  this.mode.light.toString()
+    }
+
   }
 
 

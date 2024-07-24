@@ -14,11 +14,12 @@ import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { LoginComponent } from "./pages/login/login.component";
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+
 
   ],
   imports: [
@@ -30,8 +31,9 @@ import { CoreModule } from './core/core.module';
     FormsModule,
     MatSlideToggleModule,
     CoreModule,
-  ],
+    LoginComponent
+],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
