@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-acount',
+  standalone: true,
+  imports: [],
   templateUrl: './acount.component.html',
-  styleUrls: ['./acount.component.scss']
+  styleUrl: './acount.component.scss'
 })
 export class AcountComponent {
 
