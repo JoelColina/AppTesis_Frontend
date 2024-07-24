@@ -1,33 +1,13 @@
 import { Component } from '@angular/core';
-import { Mode } from './core/enums/mode.enum';
-import { LoginComponent } from './pages/login/login.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-
+  standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'retail';
-  checked = false;
-  disabled = false;
-  mode= Mode;
-  modetheme: string =this.mode.light.toString();
-
-
-  checkedaction():void{
-    if (this.modetheme = this.mode.light){
-       this.modetheme =  this.mode.dark.toString()
-    } else {
-      this.modetheme =  this.mode.light.toString()
-    }
-
-  }
-
-
-
-
+  title = 'newretail';
 }
-

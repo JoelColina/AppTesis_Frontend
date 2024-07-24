@@ -1,4 +1,2 @@
-export enum Mode{
-  dark = 'Dark',
-  light = 'Light',
+export enum Mode {
 }
