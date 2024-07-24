@@ -10,5 +10,12 @@ export class AppComponent {
   title = 'retail';
   checked = false;
   disabled = false;
-  mode =Mode
+  mode= Mode;
+
+
+
+
+
+
 }
+
