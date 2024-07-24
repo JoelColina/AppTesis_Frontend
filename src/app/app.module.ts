@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 
 
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AppComponent } from './app.component';
     MatRadioModule,
     FormsModule,
     MatSlideToggleModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

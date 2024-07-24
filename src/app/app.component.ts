@@ -11,8 +11,12 @@ export class AppComponent {
   checked = false;
   disabled = false;
   mode= Mode;
+  modetheme: string =this.mode.light.toString();
 
 
+  checkedaction():void{
+     this.mode.dark
+  }
 
 
 

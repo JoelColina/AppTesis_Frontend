@@ -21,6 +21,14 @@ import { RutPipe } from './pipe/rut.pipe';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [
+    CurrencyPipe,
+    TitlePipe,
+    SubtitlePipe,
+    DatePipe,
+    EmailPipe,
+    RutPipe,
+  ],
 })
 export class CoreModule { }
