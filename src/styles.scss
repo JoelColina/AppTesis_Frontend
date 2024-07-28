@@ -1,3 +1,37 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+mat.$theme-ignore-duplication-warnings: true;
+
+$light-primary: mat.define-palette(mat.$indigo-palette,500);
+$light-accent: mat.define-palette(mat.$amber-palette,A200,A100,A400);
+$light1-theme: mat.define-light-theme((
+  color:(
+    theme-type: light,
+    primary: $light-primary,
+    accent: $light-accent,
+  ),
+));
+/* ****definne dark thme palltes */
+
+$dark-primary: mat.define-palette(mat.$purple-palette);
+$dark-accent: mat.define-palette(mat.$green-palette,A200,A100,A400);
+$dark1-theme: mat.define-dark-theme((
+  color:(
+    theme-type: dark,
+    primary: $dark-primary,
+    accent: $dark-accent,
+  ),
+));
+
+@include mat.all-component-themes($light1-theme);
+body.light-theme {
+  @include mat.all-component-colors($light1-theme);
+}
+
+body.dark-theme {
+  @include mat.all-component-colors($dark1-theme);
+}
 
 
 
