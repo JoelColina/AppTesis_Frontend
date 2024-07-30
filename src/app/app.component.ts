@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TitlePipePipe } from './core/pipe/title.pipe.pipe';
+import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
-import { NavigationComponent } from './core/components/navigation/navigation.component';
+import { RouterOutlet } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TitlePipePipe,LoginComponent,NavigationComponent,  ],
+  imports: [HomeComponent,LoginComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'retail';
+
 }
